@@ -1,0 +1,72 @@
+/* PAGE LAYOUT */
+.dashboard {
+    display: grid;
+    grid-template-columns: 350px 1fr;
+    gap: 24px;
+    padding: 20px;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+    .dashboard {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* CARD STYLE */
+.calendar-card,
+.expense-card {
+    background: #ffffff;
+    padding: 16px;
+    border-radius: 14px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+/* CALENDAR CLEANUP */
+.react-calendar {
+    border: none;
+    width: 100%;
+}
+
+.react-calendar__navigation button {
+    border-radius: 8px;
+}
+
+/* BOX-BOX DATE STYLE */
+.react-calendar__tile {
+    padding: 14px 0;
+    margin: 4px;
+    border-radius: 10px;
+    background: #f4f4f5;
+    transition: 0.2s;
+}
+
+.react-calendar__tile:hover {
+    background: #e5e7eb;
+}
+
+/* TODAY */
+.react-calendar__tile--now {
+    background: #dbeafe;
+}
+
+/* SELECTED DATE */
+.react-calendar__tile--active {
+    background: #2563eb !important;
+    color: white;
+}
+
+/* EXPENSE LIST */
+.expense-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    margin-bottom: 8px;
+    border: 1px solid #eee;
+    border-radius: 8px;
+}
+
+.total {
+    margin-top: 12px;
+    font-weight: bold;
+}

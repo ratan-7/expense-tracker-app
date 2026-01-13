@@ -1,0 +1,33 @@
+@import "tailwindcss";
+
+
+
+/* ---- RESET / BASE ---- */
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  /* ❌ color-scheme hata diya */
+  /* ❌ global color hata diya */
+
+  background-color: #f1f4f1;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background-color: #f1f4f1;
+}
+
+/* ❌ global anchor color hata diya */
+/* Tailwind ke text-* classes use honge */
+
+/* ❌ global button styles REMOVE */
+/* Button ka style Tailwind handle karega */
