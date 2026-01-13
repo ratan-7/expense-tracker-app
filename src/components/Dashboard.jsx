@@ -2,7 +2,7 @@ import { useState } from "react";
 import { useSelector } from "react-redux";
 import Calendar from "react-calendar";
 import "react-calendar/dist/Calendar.css";
-import "./dashboard.css";
+import "./Dashboard.css";
 
 const Dashboard = () => {
     const expenses = useSelector(
@@ -23,7 +23,6 @@ const Dashboard = () => {
         0
     );
     console.log("Selected:", formattedDate);
-    console.log("All expenses:", expenses);
 
 
     return (
