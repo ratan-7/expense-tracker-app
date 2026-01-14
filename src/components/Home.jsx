@@ -48,10 +48,15 @@ const Home = () => {
         setEditId(item.id)
     }
 
-    const totalExpenses = expenses.reduce(
+    const todayExpenses = expenses.filter(
+        item => item.date === today
+    );
+
+    const totalExpenses = todayExpenses.reduce(
         (sum, item) => sum + Number(item.amount),
         0
-    )
+    );
+
 
     const formattedDate = new Date().toLocaleDateString("en-IN", {
         day: "2-digit",
@@ -112,7 +117,7 @@ const Home = () => {
 
                 {/* Expenses List */}
                 <ul className="space-y-3">
-                    {expenses.map(item => (
+                    {todayExpenses.map(item => (
                         <li
                             key={item.id}
                             className="flex flex-col gap-3 rounded-lg border border-gray-200
